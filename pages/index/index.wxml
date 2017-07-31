@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="calender">
+        <view class="calender-change">
+            <view class="calender-change-left-wrap inline calender-change-wrap" bindtap="changeMonth" data-type="prev">
+              <view class="calender-change-left inline"></view>
+            </view>
+            <view class="calender-change-time inline">{{timeline.year}} / {{timeline.month}}</view>
+            <view class="calender-change-right-wrap inline calender-change-wrap" bindtap="changeMonth" data-type="next">
+              <view class="calender-change-right inline"></view>
+            </view>
+        </view>
+        <view class="calender-list">
+            <view class="calender-list-weeks flex">
+                <view class="weeks-item minWidth" wx:for="{{weeks}}" wx:key="{{item}}">{{item}}</view>
+            </view>
+            <view class="calender-list-days flex">
+                <view class="calender-list-emptyDays minWidth" wx:for="{{emptyArray}}" wx:key="{{index}}"></view>
+                <view class="calender-list-noEmptyDays minWidth" wx:for="{{nonemptyArray}}" wx:key="{{index}}">{{item}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+

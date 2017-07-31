@@ -1,0 +1,65 @@
+/**index.wxss**/
+.container{
+  text-align: center;
+}
+.clearfix::after{
+  clear: both;
+  content:"";
+  display: block;
+  height: 0;
+}
+/******time-change css start******/
+.calender-change{
+  text-align:center;
+  background-color:#e12f3c;
+  height: 78rpx;
+  line-height:78rpx;
+  color:#fff;
+  width: 100%;
+  font-size:32rpx;
+}
+.calender-change-wrap{
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.calender-change-left-wrap{
+  margin-right:60rpx;
+}
+.calender-change-right-wrap{
+  margin-left:60rpx;
+}
+.calender-change-left, .calender-change-right{
+  border-top:12rpx solid transparent;
+  border-bottom:12rpx solid transparent;
+}
+.calender-change-left{
+  border-right:17rpx solid #fff;
+}
+.calender-change-right{
+  border-left:17rpx solid #fff;
+}
+
+/******calender-list css start******/
+.calender-list-weeks{
+  width:680rpx;
+  margin:35rpx auto 0rpx;
+  font-size:30rpx;
+}
+.calender-list-days{
+  width:680rpx;
+  margin:0rpx auto;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+  font-size:28rpx;
+  margin-top: 10rpx;
+  height: 500rpx;
+  align-items: center;
+}
+.minWidth{
+  min-width: 97.1428rpx;
+  height: 97.1428rpx;
+  line-height: 97.1428rpx;
+}
+
+
